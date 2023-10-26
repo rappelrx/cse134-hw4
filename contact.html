@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>The Mascots: Contact</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/golang-gopher-pfp.png">
+</head>
+
+<body>
+    <header>
+        <h1>Rappel's Website</h1>
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li>
+                    <a href="./gallery.html">Gallery</a>
+                    <ul>
+                        <li><a href="./gallery.html#pictures">Pictures</a></li>
+                        <li><a href="./gallery.html#videos">Videos</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="contact-header">
+            <header>
+                <h2>Contact</h2>
+            </header>
+        </section>
+
+        <section id="contact-form">
+            <h3>Weekly Dinner Form</h3>
+            <details>
+                <summary>ABOUT WEEKLY DINNER</summary>
+                <p>Every Friday after rehearsal, we go out to dinner, usually in Convoy!</p>
+            </details><br><br>
+
+            <form>
+                <fieldset>
+                    <legend>Vote on our Friday dinner place!</legend><br>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date"><br><br>
+
+                    <p>What year are you?</p>
+                    <input type="radio" id="option1" name="gradyear" value="first">
+                    <label for="option1">Freshman</label><br>
+                    <input type="radio" id="option2" name="gradyear" value="second">
+                    <label for="option2">Sophomore</label><br>
+                    <input type="radio" id="option3" name="gradyear" value="third">
+                    <label for="option3">Junior</label><br>
+                    <input type="radio" id="option4" name="gradyear" value="fourth">
+                    <label for="option4">Senior</label><br>
+                    <input type="radio" id="option5" name="gradyear" value="grad">
+                    <label for="option5">Grad Student</label><br><br>
+
+                    <p>Which restaurants do you prefer? Select all that apply.</p>
+                    <input type="checkbox" id="check1" name="restaurant" value="izakaya">
+                    <label for="check1">Fusion Izakaya 52</label><br>
+                    <input type="checkbox" id="check2" name="restaurant" value="bonchon">
+                    <label for="check2">Bonchon Chicken</label><br>
+                    <input type="checkbox" id="check3" name="restaurant" value="mcdonalds">
+                    <label for="check3">McDonald's</label><br>
+                    <input type="checkbox" id="check4" name="restaurant" value="friends">
+                    <label for="check4">Friend's House</label><br>
+                    <input type="checkbox" id="check5" name="restaurant" value="tastypot">
+                    <label for="check5">Tasty Pot</label><br>
+                    <input type="checkbox" id="check6" name="restaurant" value="siamnara">
+                    <label for="check6">Siam Nara</label><br><br>
+
+                    <label for="diet">Dietary Restrictions:</label>
+                    <input list="dietoption" id="diet" name="diet">
+                    <datalist id="dietoption">
+                        <option value="None">
+                        <option value="Vegetarian">
+                        <option value="Vegan">
+                    </datalist><br><br>
+
+                    <label for="dessert">Choose our dessert place:</label>
+                    <select id="dessert" name="dessert">
+                        <option value="Up2You">Up2You</option>
+                        <option value="ShareTea">ShareTea</option>
+                        <option value="Mochinut">Mochinut</option>
+                    </select><br><br>
+
+                    <h4>Any comments/questions/concerns?</h4>
+                    <textarea id="comment" name="comment" rows="4" cols="50">Type here...</textarea><br><br>
+
+                    <button type="button">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>This page was made with &hearts; by Rappel R.</p>
+    </footer>
+</body>
+
+</html>
