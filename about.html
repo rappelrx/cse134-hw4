@@ -4,30 +4,26 @@
 <head>
     <title>The Mascots: About</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/golang-gopher-pfp.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans" />
+    <link rel="icon" href="./images/golang-gopher-pfp.png" />
 </head>
 
 <body>
     <header>
         <h1>Rappel's Website</h1>
+        <input type="checkbox" id="toggle">
+        <label class="burger-menu" for="toggle">&#9776;</label>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="./">Home</a></li>
                 <li><a href="./about.html">About</a></li>
-                <li>
-                    <a href="./gallery.html">Gallery</a>
-                    <ul>
-                        <li><a href="./gallery.html#pictures">Pictures</a></li>
-                        <li><a href="./gallery.html#videos">Videos</a></li>
-                    </ul>
-                </li>
+                <li><a href="./gallery.html">Gallery</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <hr>
 
     <main>
         <section id="about-header">
@@ -38,14 +34,18 @@
 
         <section id="about-text">
             <figure>
-                <img src="./images/golang-gopher-pfp.png" alt="Golang the gopher" width="200">
-                <figcaption>Fig.1 - Golang the gopher</figcaption>
+                <picture>
+                    <source media="(min-width:1280px)" srcset="./images/figma-clyde.png">
+                    <source media="(min-width:840px)" srcset="./images/duolingo-grad.png">
+                    <source media="(min-width:420px)" srcset="./images/figma-scratch.png">
+                    <img src="./images/golang-gopher-pfp.png" alt="Mascot" style="width:40%">
+                </picture>
+                <figcaption>The mascot above will change upon screen resizing!</figcaption>
             </figure>
-            <p>Golang is a gopher inspired by Go's mascot.</p>
+            <p>These mascots were designed by Rappel in Figma. They are inspired by mascots of popular brands, such as
+                Duolingo's Duo and Discord's Clyde.</p>
         </section>
     </main>
-
-    <hr>
 
     <footer>
         <p>This page was made with &hearts; by Rappel R.</p>

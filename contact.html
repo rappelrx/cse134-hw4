@@ -5,29 +5,25 @@
     <title>The Mascots: Contact</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/golang-gopher-pfp.png">
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans" />
+    <link rel="icon" href="./images/golang-gopher-pfp.png" />
 </head>
 
 <body>
     <header>
         <h1>Rappel's Website</h1>
+        <input type="checkbox" id="toggle">
+        <label class="burger-menu" for="toggle">&#9776;</label>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="./">Home</a></li>
                 <li><a href="./about.html">About</a></li>
-                <li>
-                    <a href="./gallery.html">Gallery</a>
-                    <ul>
-                        <li><a href="./gallery.html#pictures">Pictures</a></li>
-                        <li><a href="./gallery.html#videos">Videos</a></li>
-                    </ul>
-                </li>
+                <li><a href="./gallery.html">Gallery</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <hr>
 
     <main>
         <section id="contact-header">
@@ -37,15 +33,15 @@
         </section>
 
         <section id="contact-form">
-            <h3>Weekly Dinner Form</h3>
+            <h3>Dinner with a Mascot!</h3>
             <details>
-                <summary>ABOUT WEEKLY DINNER</summary>
-                <p>Every Friday after rehearsal, we go out to dinner, usually in Convoy!</p>
+                <summary>ABOUT THIS FORM</summary>
+                <p>Schedule a dinner date with a mascot!</p>
             </details><br><br>
 
             <form>
                 <fieldset>
-                    <legend>Vote on our Friday dinner place!</legend><br>
+                    <legend>Choose a dinner place!</legend><br>
 
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name"><br><br>
@@ -53,17 +49,17 @@
                     <label for="date">Date:</label>
                     <input type="date" id="date" name="date"><br><br>
 
-                    <p>What year are you?</p>
-                    <input type="radio" id="option1" name="gradyear" value="first">
-                    <label for="option1">Freshman</label><br>
-                    <input type="radio" id="option2" name="gradyear" value="second">
-                    <label for="option2">Sophomore</label><br>
-                    <input type="radio" id="option3" name="gradyear" value="third">
-                    <label for="option3">Junior</label><br>
-                    <input type="radio" id="option4" name="gradyear" value="fourth">
-                    <label for="option4">Senior</label><br>
-                    <input type="radio" id="option5" name="gradyear" value="grad">
-                    <label for="option5">Grad Student</label><br><br>
+                    <p>Who would you like to have dinner with?</p>
+                    <input type="radio" id="option1" name="mascot" value="scratch">
+                    <label for="option1">Scratch</label><br>
+                    <input type="radio" id="option2" name="mascot" value="go">
+                    <label for="option2">Go</label><br>
+                    <input type="radio" id="option3" name="mascot" value="octocat">
+                    <label for="option3">Octocat</label><br>
+                    <input type="radio" id="option4" name="mascot" value="duo">
+                    <label for="option4">Duo</label><br>
+                    <input type="radio" id="option5" name="mascot" value="clyde">
+                    <label for="option5">Clyde</label><br><br>
 
                     <p>Which restaurants do you prefer? Select all that apply.</p>
                     <input type="checkbox" id="check1" name="restaurant" value="izakaya">
@@ -95,15 +91,13 @@
                     </select><br><br>
 
                     <h4>Any comments/questions/concerns?</h4>
-                    <textarea id="comment" name="comment" rows="4" cols="50">Type here...</textarea><br><br>
+                    <textarea id="comment" name="comment" rows="4" cols="30">Type here...</textarea><br><br>
 
                     <button type="button">Submit</button>
                 </fieldset>
             </form>
         </section>
     </main>
-
-    <hr>
 
     <footer>
         <p>This page was made with &hearts; by Rappel R.</p>
