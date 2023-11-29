@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/theme-switch.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Sans" />
     <link rel="icon" href="./images/golang-gopher-pfp.png" />
 </head>
@@ -23,9 +24,18 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round">
+                    <img class="theme-icon" src="./icons/moon-icon.svg" alt="dark mode" />
+                    <img class="theme-icon" src="./icons/sun-icon.svg" alt="light mode" />
+                </div>
+            </label>
+        </div>
     </header>
 
-    <main>
+    <main id="dark-mode-toggle" class="light-edition dark-edition">
         <section id="about-header">
             <header>
                 <h2>About</h2>
@@ -50,6 +60,7 @@
     <footer>
         <p>This page was made with &hearts; by Rappel R.</p>
     </footer>
+    <script src="./scripts/theme-switch.js"></script>
 </body>
 
 </html>

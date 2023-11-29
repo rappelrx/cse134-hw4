@@ -1,0 +1,110 @@
+.theme-switch-wrapper {
+  float: right;
+  position: sticky;
+  top: 0;
+  right: 10px;
+  padding-top: 10px;
+  z-index: 1;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+.slider:before {
+  background-color: #2b252c;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+input:checked + .slider {
+  background-color: #e1c16e;
+  /* background-color: #d3a4fb; */
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.slider.round {
+  display: flex;
+  justify-content: center;
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.theme-icon {
+  width: 45%;
+}
+
+.dark-edition {
+  background-color: #2b252c !important;
+  color: white !important;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+.dark-edition h2,
+.dark-edition h3 {
+  color: white !important;
+}
+
+.dark-edition h4,
+.dark-edition strong {
+  color: white !important;
+}
+
+.dark-edition b {
+  color: white !important;
+}
+
+.dark-edition .form-output > output,
+.dark-edition .req {
+    color: yellow !important;
+}
+
+.light-edition {
+  background-color: white;
+  color: black;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+.light-edition h2,
+.light-edition h3 {
+  color: black;
+}
+
+.light-edition h4,
+.light-edition strong {
+  color: black;
+}
+
+.light-edition b {
+  color: black;
+}
+
+.light-edition .form-output > output,
+.light-edition .req {
+    color: red;
+}
