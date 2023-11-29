@@ -1,3 +1,3 @@
-# CSE 134 Website Part 2
+# CSE 134 Website Part 3
 
-Deployed at: https://voluble-hummingbird-7a3e86.netlify.app 
+Deployed at: 
