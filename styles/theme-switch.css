@@ -38,7 +38,7 @@
   width: 26px;
 }
 input:checked + .slider {
-  background-color: #e1c16e;
+  background-color: #F9A857;
   /* background-color: #d3a4fb; */
 }
 input:checked + .slider:before {

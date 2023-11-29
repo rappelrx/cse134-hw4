@@ -272,10 +272,35 @@ nav > ul:before {
 }
 
 .form-output {
-  column-gap: 1em;
+  display: grid;
+}
+
+#comments-char-count {
+  margin-left: auto;
 }
 
 .form-output > output {
   font-size: small;
-  color: red;
+}
+
+@keyframes flash {
+  0%, 100% {
+    color: yellow;
+  }
+  50% {
+    color: red;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  } to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 2s;
+  animation-delay: 2s;
 }

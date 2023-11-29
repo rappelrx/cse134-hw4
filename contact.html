@@ -51,7 +51,7 @@
                     <label class="form-label" for="fullname">Full Name: <span class="req">*</span></label>
                     <input pattern="[a-zA-Z0-9\- ]+" minlength="3" maxlength="50" type="text" id="fullname" name="fullname" placeholder="Your Name" required>
                     <div class="form-output">
-                        <output>Please enter a valid name.</output>
+                        <output id="fullname-error"></output>
                         <output></output>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                     <label class="form-label" for="email">Email: <span class="req">*</span></label>
                     <input pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" type="email" id="email" name="email" placeholder="Your Email" required>
                     <div class="form-output">
-                        <output>Please enter a valid email.</output>
+                        <output id="email-error"></output>
                         <output></output>
                     </div>
                 </div>
@@ -69,8 +69,8 @@
                     <label class="form-label" for="comments">Comments: <span class="req">*</span></label>
                     <textarea minlength="2" maxlength="800" id="comments" name="comments" placeholder="Comments..." required></textarea>
                     <div class="form-output">
-                        <output>Please enter a valid comment.</output>
                         <output></output>
+                        <output id="comments-char-count"></output>
                     </div>
                 </div>
 
